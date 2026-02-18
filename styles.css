@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #2196f3;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin-top: 0.4rem;
+}
+.tiles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem auto;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+.tile {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(33,150,243,0.07);
+  padding: 2rem 1.2rem 1.2rem 1.2rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.tile:hover {
+  box-shadow: 0 6px 22px 0 rgba(33,150,243,0.15);
+}
+.cta {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+.cta button {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.17s;
+}
+.cta button:hover {
+  background: #1769aa;
+}
+footer {
+  background: #e3eaf5;
+  color: #444;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+@media (max-width: 660px) {
+  .tiles-container {
+    grid-template-columns: 1fr;
+  }
+  header {
+    padding: 1.5rem 0.2rem 1rem 0.2rem;
+  }
+}
